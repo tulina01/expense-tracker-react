@@ -27,7 +27,7 @@ function TransactionItem({ transaction, removeTransaction }) {
   return (
     <Item isExpense={transaction?.transType === "expense"}>
       <span>{transaction.details}</span>
-      <span>{transaction.amount}</span>
+      <span>Rs. {transaction.amount}</span>
       <RemoveBtn onClick={() => removeTransaction(transaction.id)}>
         Remove
       </RemoveBtn>
