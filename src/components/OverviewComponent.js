@@ -32,7 +32,7 @@ function OverviewComponent({ toggle, setToggle, income, expense }) {
   return (
     <Container>
       <Balance>
-        Balance <span>{bal}</span>
+        Balance - <span>Rs.{bal}</span>
       </Balance>
       <AddBtn onClick={() => setToggle(!toggle)}>
         {toggle ? "Cancel" : "Add"}
